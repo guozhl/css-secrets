@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>条纹背景</title>
+
+    <style>
+        body {
+            /* 水平条纹 */
+            /* background: linear-gradient(#fb3 50%, #58a 0);
+            background-size: 100% 30px; */
+
+            /* 垂直条纹 */
+            /* background: linear-gradient(to right, #fb3 50%, #58a 0);
+            background-size: 30px 100%; */
+
+            /* 斜向条纹 */
+            /* background: linear-gradient(45deg,
+                    #fb3 25%, #58a 0, #58a 50%,
+                    #fb3 0, #fb3 75%, #58a 0);
+            background-size: 42.4px 42.4px; */
+
+            /* 另一种条纹 */
+            /* background: repeating-linear-gradient(60deg,
+                    #fb3, #fb3 15px,
+                    #58a 0, #58a 30px);
+
+            height: 100%; */
+
+            /* 同色系条纹 */
+            background: #58a;
+            background-image: repeating-linear-gradient(30deg,
+                    hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1) 15px,
+                    transparent 0, transparent 30px);
+
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

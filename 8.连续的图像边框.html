@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>连续的图像边框</title>
+
+    <style>
+        /* 图像边框而不是背景 */
+        /* div {
+            border: 1em solid transparent;
+            background: linear-gradient(white, white) padding-box,
+                url(http://csssecrets.io/images/stone-art.jpg) border-box 0 / cover;
+
+            width: 21em;
+            padding: 1em;
+            overflow: hidden;
+            resize: both;
+            font: 100%/1.6 Baskerville, Palatino, serif;
+        } */
+
+        /* 渐变边框 */
+        div {
+            padding: 1em;
+            border: 1em solid transparent;
+            background: linear-gradient(white, white) padding-box,
+                repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%,
+                    #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 / 6em 6em;
+
+            max-width: 20em;
+            font: 100%/1.6 Baskerville, Palatino, serif;
+        }
+
+        /* 边框裁切效果 */
+        .footnote {
+            margin-top: 50px;
+            display: inline-block;
+            border-top: .15em solid transparent;
+            border-image: 100% 0 0 linear-gradient(90deg, currentColor 4em, transparent 0);
+            padding-top: .5em;
+            font: 220%/1.4 Baskerville, Palatino, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Bacon ipsum dolor amet eu adipisicing elit tongue ground round ex fatback proident kielbasa ham hock. Sausage
+        beef beef ribs aliquip t-bone mollit. Quis beef tri-tip sunt, cupim ut magna salami t-bone. Ut laboris bresaola
+        ribeye biltong landjaeger. Chuck pork belly sed sausage.</div>
+
+    <span class="footnote"><sup>1</sup> This is a footnote.</span>
+</body>
+
+</html>
